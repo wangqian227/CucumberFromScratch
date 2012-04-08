@@ -7,7 +7,8 @@ Given /^I have another number (\d+)$/ do |num2|
 end
 
 When /^I plus the two numbers$/ do
-  @sum = @num1 + @num2
+  calculator = Calculator.new
+  @sum = calculator.calculate(@num1, @num2)
 end
 
 Then /^I get the sum is (\d+)$/ do |sum|
