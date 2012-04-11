@@ -15,3 +15,7 @@ Then /^I get the sum is (\d+)$/ do |sum|
   @hope_sum = sum.to_i
   @hope_sum.equal?(@sum)
 end
+
+Given /^I have a background$/ do
+  p "---- This is a background ----"
+end

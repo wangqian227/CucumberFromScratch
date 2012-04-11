@@ -1,4 +1,5 @@
 Before do
+  puts "--------------"
   puts "*** before scenario *** \n"
 end
 
@@ -7,5 +8,6 @@ AfterStep do
 end
 
 After do
-  puts "*** after scenario *** \n"
+  p "*** after scenario *** \n"
+  #sleep(10)
 end
